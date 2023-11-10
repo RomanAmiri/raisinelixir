@@ -11,19 +11,19 @@ import { MotionViewport, varFade } from '../../components/animate';
 const CARDS = [
   {
     icon: ' /assets/icons/home/ic_make_brand.svg',
-    title: 'Branding',
-    description: 'Consistent design makes it easy to brand your own.',
+    title: 'Pure Persian Heritage',
+    description: 'Our Raisin Elixir is a true embodiment of Persian heritage. Crafted with a recipe that has been cherished for generations, each bottle carries the legacy of traditional craftsmanship. We take pride in preserving the essence of Persian culture, making every sip a journey through time and tradition',
   },
   {
     icon: ' /assets/icons/home/ic_design.svg',
-    title: 'UI & UX Design',
+    title: '100% Natural Goodness',
     description:
-      'The kit is built on the principles of the atomic design system. It helps you to create projects fastest and easily customized packages for your projects.',
+      " We believe that the best products are born from nature. That's why our Raisin Elixir contains only 100% natural ingredients. We carefully select the finest raisins, ensuring the absence of artificial additives. It's pure, wholesome, and a testament to our commitment to your well-being",
   },
   {
     icon: ' /assets/icons/home/ic_development.svg',
-    title: 'Development',
-    description: 'Easy to customize and extend, saving you time and money.',
+    title: 'Unparalleled Quality',
+    description: 'Quality is our hallmark. Our Raisin Elixir is a product of meticulous care and precision. With each batch, we deliver a rich and velvety elixir that stands out for its exceptional quality. From the selection of ingredients to the crafting process, we ensure that your experience is unparalleled',
   },
 ];
 
@@ -58,13 +58,13 @@ export default function HomeMinimal() {
         >
           <m.div variants={varFade().inUp}>
             <Typography component="div" variant="overline" sx={{ color: 'text.disabled' }}>
-              Minimal UI
+              HANDMADE
             </Typography>
           </m.div>
 
           <m.div variants={varFade().inDown}>
             <Typography variant="h2">
-              What minimal <br /> helps you?
+              CRAFTING HERITAGE
             </Typography>
           </m.div>
         </Stack>
@@ -84,11 +84,10 @@ export default function HomeMinimal() {
                 sx={{
                   ...(index === 1 && {
                     boxShadow: (theme) => ({
-                      md: `-40px 40px 80px ${
-                        theme.palette.mode === 'light'
+                      md: `-10px 10px 10px ${theme.palette.mode === 'light'
                           ? alpha(theme.palette.grey[500], 0.16)
                           : alpha(theme.palette.common.black, 0.4)
-                      }`,
+                        }`,
                     }),
                   }),
                 }}
@@ -103,7 +102,10 @@ export default function HomeMinimal() {
                   {card.title}
                 </Typography>
 
-                <Typography sx={{ color: 'text.secondary' }}>{card.description}</Typography>
+                <Typography
+                  style={{
+                    textAlign: 'justify'
+                  }} sx={{ color: 'text.secondary' }}>{card.description}</Typography>
               </StyledCard>
             </m.div>
           ))}

@@ -3,9 +3,9 @@ import { useEffect, useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 // @mui
 import { styled, alpha, useTheme } from '@mui/material/styles';
-import { Button, Box, Link, Container, Typography, Stack, Grid } from '@mui/material';
+import { Button, Box, Container, Typography, Stack, Grid } from '@mui/material';
 // routes
-import { PATH_DASHBOARD, PATH_FIGMA_PREVIEW, PATH_FREE_VERSION } from '../../routes/paths';
+import {PATH_PAGE } from '../../routes/paths';
 // hooks
 import useResponsive from '../../hooks/useResponsive';
 // utils
@@ -13,7 +13,7 @@ import { textGradient, bgGradient } from '../../utils/cssStyles';
 // config
 import { HEADER } from '../../config';
 // components
-import SvgColor from '../../components/svg-color';
+// import SvgColor from '../../components/svg-color';
 import Iconify from '../../components/iconify';
 import { MotionContainer, varFade } from '../../components/animate';
 
@@ -146,8 +146,8 @@ function Description() {
     <StyledDescription>
       <m.div variants={varFade().in}>
         <Typography variant="h2" sx={{ textAlign: 'center' }}>
-          Start a <br />
-          new project with
+          A Gift <br />
+          From Persia
         </Typography>
       </m.div>
 
@@ -161,14 +161,14 @@ function Description() {
             repeat: Infinity,
           }}
         >
-          Minimal
+          RAISIN ELIXIR
         </StyledGradientText>
       </m.div>
 
       <m.div variants={varFade().in}>
         <Typography variant="body2" sx={{ textAlign: 'center' }}>
-          The starting point for your next project is based on MUI.Easy customization Helps you build apps faster and
-          better.
+          Unlock a World of Happiness with Every Sip
+          <br />A Masterpiece of 100% Natural Craftsmanship
         </Typography>
       </m.div>
 
@@ -176,7 +176,7 @@ function Description() {
         <Stack spacing={1.5} direction={{ xs: 'column-reverse', sm: 'row' }} sx={{ my: 5 }}>
           <Stack alignItems="center" spacing={2}>
             <Button
-              to={PATH_DASHBOARD.root}
+              to={PATH_PAGE.contact}
               component={RouterLink}
               color="inherit"
               size="large"
@@ -190,10 +190,10 @@ function Description() {
                 },
               }}
             >
-              Live Preview
+              Contact Us
             </Button>
 
-            <Link
+            {/* <Link
               color="inherit"
               variant="caption"
               target="_blank"
@@ -203,10 +203,10 @@ function Description() {
             >
               <Iconify icon="eva:external-link-fill" width={16} sx={{ mr: 0.5 }} />
               Get Free Version
-            </Link>
+            </Link> */}
           </Stack>
 
-          <Button
+          {/* <Button
             color="inherit"
             size="large"
             variant="outlined"
@@ -217,11 +217,11 @@ function Description() {
             sx={{ borderColor: 'text.primary' }}
           >
             Design Preview
-          </Button>
+          </Button> */}
         </Stack>
       </m.div>
 
-      <Stack spacing={3} sx={{ textAlign: 'center', opacity: 0.4 }}>
+      {/* <Stack spacing={3} sx={{ textAlign: 'center', opacity: 0.4 }}>
         <m.div variants={varFade().in}>
           <Typography variant="overline">Available For</Typography>
         </m.div>
@@ -233,7 +233,7 @@ function Description() {
             </m.div>
           ))}
         </Stack>
-      </Stack>
+      </Stack> */}
     </StyledDescription>
   );
 }
@@ -268,14 +268,14 @@ function Content() {
           component={m.img}
           animate={{ y: ['0%', '100%'] }}
           transition={transition}
-          src={`/assets/images/home/hero_${isLight ? 'light' : 'dark'}_1.png`}
+          src={`/assets/images/home/${isLight ? 'hero-01' : 'hero-01'}.webp`}
           sx={{ position: 'absolute' }}
         />
         <Box
           component={m.img}
           animate={{ y: ['-100%', '0%'] }}
           transition={transition}
-          src={`/assets/images/home/hero_${isLight ? 'light' : 'dark'}_1.png`}
+          src={`/assets/images/home/${isLight ? 'hero-01' : 'hero-01'}.webp`}
           sx={{ position: 'absolute' }}
         />
       </Stack>
@@ -285,14 +285,14 @@ function Content() {
           component={m.img}
           animate={{ y: ['100%', '0%'] }}
           transition={transition}
-          src={`/assets/images/home/hero_${isLight ? 'light' : 'dark'}_2.png`}
+          src={`/assets/images/home/${isLight ? 'hero-02' : 'hero-02'}.webp`}
           sx={{ position: 'absolute' }}
         />
         <Box
           component={m.img}
           animate={{ y: ['0%', '-100%'] }}
           transition={transition}
-          src={`/assets/images/home/hero_${isLight ? 'light' : 'dark'}_2.png`}
+          src={`/assets/images/home/${isLight ? 'hero-02' : 'hero-02'}.webp`}
           sx={{ position: 'absolute' }}
         />
       </Stack>

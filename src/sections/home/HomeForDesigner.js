@@ -6,10 +6,11 @@ import { Box, Grid, Container, Typography, Button } from '@mui/material';
 // utils
 import { filterStyles, textGradient, bgGradient } from '../../utils/cssStyles';
 // routes
-import { PATH_FIGMA_PREVIEW } from '../../routes/paths';
+// import { PATH_FIGMA_PREVIEW } from '../../routes/paths';
 // components
-import Iconify from '../../components/iconify';
+// import Iconify from '../../components/iconify';
 import { MotionViewport, varFade } from '../../components/animate';
+import { PATH_PAGE } from '../../routes/paths';
 
 // ----------------------------------------------------------------------
 
@@ -60,9 +61,8 @@ const StyledContent = styled(m.img)(({ theme }) => ({
     zIndex: 8,
     minHeight: 'auto',
     position: 'absolute',
-    boxShadow: `-40px 80px 80px ${
-      theme.palette.mode === 'light' ? alpha(theme.palette.grey[500], 0.4) : theme.palette.common.black
-    }`,
+    boxShadow: `-10px 10px 10px ${theme.palette.mode === 'light' ? alpha(theme.palette.grey[500], 0.4) : theme.palette.common.black
+      }`,
   },
 }));
 
@@ -79,7 +79,7 @@ export default function HomeForDesigner() {
             </Grid>
 
             <Grid item md={6}>
-              <StyledContent src="/assets/images/home/for_designer.jpg" variants={varFade().in} />
+              <StyledContent src="/assets/images/home/for_designer.png" variants={varFade().in} />
             </Grid>
           </Grid>
         </Container>
@@ -101,7 +101,7 @@ function Description() {
     <StyledDescription>
       <m.div variants={varFade().inUp}>
         <Typography component="div" variant="overline" sx={{ color: 'text.disabled' }}>
-          Professional Kit
+        Elevate Every Moment
         </Typography>
       </m.div>
 
@@ -114,19 +114,32 @@ function Description() {
             ...textGradient(`300deg, ${theme.palette.primary.main} 0%, ${theme.palette.warning.main} 100%`),
           }}
         >
-          For Designer
+          Gateway to Happiness
         </Typography>
       </m.div>
+
+      <Box variants={varFade().inUp} style={{ marginBottom: 20, paddingRight: '2rem' }}
+        sx={{
+          paddingLeft: { xs: '2rem',sm: '2rem', md: '0' },  // Adjust the values as needed
+        }}
+      >
+        <Typography component="div" variant="body" textAlign='justify' sx={{ color: 'text.disabled' }}>
+          Our Raisin Elixir is more than a beverage; it&apos;s a gateway to happiness. Each sip is an
+          opportunity to celebrate life&apos;s moments, create cherished memories, and find joy in
+          tradition and authenticity. We invite you to savor happiness with our elixir, making every
+          moment a memorable one
+        </Typography>
+      </Box>
+
 
       <m.div variants={varFade().inUp}>
         <Button
           color="inherit"
           size="large"
           variant="outlined"
-          endIcon={<Iconify icon="ic:round-arrow-right-alt" />}
           target="_blank"
           rel="noopener"
-          href={PATH_FIGMA_PREVIEW}
+          href={PATH_PAGE.contact}
           sx={{
             bgcolor: 'text.primary',
             color: (theme) => (theme.palette.mode === 'light' ? 'common.white' : 'grey.800'),
@@ -135,10 +148,10 @@ function Description() {
             },
           }}
         >
-          Go to Figma Workspace
+          Contact Us
         </Button>
       </m.div>
-    </StyledDescription>
+    </StyledDescription >
   );
 }
 

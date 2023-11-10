@@ -8,14 +8,15 @@ import {
   HomeHero,
   HomeMinimal,
   HomeDarkMode,
-  HomeLookingFor,
+   HomeLookingFor,
   HomeForDesigner,
-  HomeColorPresets,
-  HomePricingPlans,
+  // HomeColorPresets,
+  // HomePricingPlans,
   HomeAdvertisement,
-  HomeCleanInterfaces,
-  HomeHugePackElements,
+  // HomeCleanInterfaces,
+  // HomeHugePackElements,
 } from '../sections/home';
+import HomeForProduct from '../sections/home/HomeForProduct';
 
 // ----------------------------------------------------------------------
 
@@ -49,10 +50,10 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title> The starting point for your next project | Minimal UI</title>
+        <title>Raisin Elixir</title>
       </Helmet>
 
-      {progress}
+    {progress}
 
       <HomeHero />
 
@@ -63,19 +64,21 @@ export default function HomePage() {
           bgcolor: 'background.default',
         }}
       >
-        <HomeMinimal />
+        
 
-        <HomeHugePackElements />
+        {/* <HomeHugePackElements /> */}
+        <HomeForProduct />
 
         <HomeForDesigner />
+        <HomeMinimal />
+        {/* <HomeDarkMode /> */}
 
-        <HomeDarkMode />
 
-        <HomeColorPresets />
+        {/* <HomeColorPresets />
 
         <HomeCleanInterfaces />
 
-        <HomePricingPlans />
+        <HomePricingPlans /> */}
 
         <HomeLookingFor />
 
