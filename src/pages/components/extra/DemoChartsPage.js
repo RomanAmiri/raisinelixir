@@ -27,7 +27,7 @@ export default function DemoChartsPage() {
   return (
     <>
       <Helmet>
-        <title> Extra Components: Charts | Minimal UI</title>
+        <title> Extra Components: Charts | Raisin Elixir</title>
       </Helmet>
 
       <Box

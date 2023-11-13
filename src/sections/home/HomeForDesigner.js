@@ -56,8 +56,9 @@ const StyledDescription = styled('div')(({ theme }) => ({
 
 const StyledContent = styled(m.img)(({ theme }) => ({
   minHeight: 560,
+  minWidth: 800,
   [theme.breakpoints.up('md')]: {
-    top: 1,
+    top: 30,
     zIndex: 8,
     minHeight: 'auto',
     position: 'absolute',
@@ -79,7 +80,7 @@ export default function HomeForDesigner() {
             </Grid>
 
             <Grid item md={6}>
-              <StyledContent src="/assets/images/home/for_designer.png" variants={varFade().in} />
+              <StyledContent src="/assets/images/home/raisin/small_bottles.png" variants={varFade().in} />
             </Grid>
           </Grid>
         </Container>
@@ -99,7 +100,9 @@ function Description() {
 
   return (
     <StyledDescription>
-      <m.div variants={varFade().inUp}>
+      <m.div variants={varFade().inUp} style={{
+        paddingTop: 25
+      }}>
         <Typography component="div" variant="overline" sx={{ color: 'text.disabled' }}>
         Elevate Every Moment
         </Typography>
@@ -118,7 +121,7 @@ function Description() {
         </Typography>
       </m.div>
 
-      <Box variants={varFade().inUp} style={{ marginBottom: 20, paddingRight: '2rem' }}
+      <Box variants={varFade().inUp} style={{ marginBottom: 20, paddingRight: '2rem', paddingBottom: 25 }}
         sx={{
           paddingLeft: { xs: '2rem',sm: '2rem', md: '0' },  // Adjust the values as needed
         }}
@@ -132,7 +135,7 @@ function Description() {
       </Box>
 
 
-      <m.div variants={varFade().inUp}>
+      {/* <m.div variants={varFade().inUp}>
         <Button
           color="inherit"
           size="large"
@@ -150,7 +153,7 @@ function Description() {
         >
           Contact Us
         </Button>
-      </m.div>
+      </m.div> */}
     </StyledDescription >
   );
 }

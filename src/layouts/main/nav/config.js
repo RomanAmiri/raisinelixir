@@ -8,21 +8,21 @@ import Iconify from '../../../components/iconify';
 // ----------------------------------------------------------------------
 
 const navConfig = [
-  {
-    title: 'Home',
-    icon: <Iconify icon="eva:home-fill" />,
-    path: '/',
-  },
-  {
-    title: 'About Us',
-    icon: <Iconify icon="ic:round-grain" />,
-    path: PATH_PAGE.about,
-  },
-  {
-    title: 'Contact Us',
-    icon: <Iconify icon="ic:round-grain" />,
-    path: PATH_PAGE.contact,
-  },
+  // {
+  //   title: 'Home',
+  //   icon: <Iconify icon="eva:home-fill" />,
+  //   path: '/',
+  // },
+  // {
+  //   title: 'About Us',
+  //   icon: <Iconify icon="ic:round-grain" />,
+  //   path: PATH_PAGE.about,
+  // },
+  // {
+  //   title: 'Contact Us',
+  //   icon: <Iconify icon="ic:round-grain" />,
+  //   path: PATH_PAGE.contact,
+  // },
   // {
   //   title: 'Components',
   //   icon: <Iconify icon="ic:round-grain" />,

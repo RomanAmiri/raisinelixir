@@ -12,26 +12,26 @@ import Iconify from '../../components/iconify';
 // ----------------------------------------------------------------------
 
 const LINKS = [
-  {
-    headline: 'Minimal',
-    children: [
-      { name: 'About us', href: PATH_PAGE.about },
-      { name: 'Contact us', href: PATH_PAGE.contact },
-      { name: 'FAQs', href: PATH_PAGE.faqs },
-    ],
-  },
-  {
-    headline: 'Legal',
-    children: [
-      { name: 'Terms and Condition', href: '#' },
-      { name: 'Privacy Policy', href: '#' },
-    ],
-  },
+  // {
+  //   headline: 'Minimal',
+  //   children: [
+  //     { name: 'About us', href: PATH_PAGE.about },
+  //     { name: 'Contact us', href: PATH_PAGE.contact },
+  //     { name: 'FAQs', href: PATH_PAGE.faqs },
+  //   ],
+  // },
+  // {
+  //   headline: 'Legal',
+  //   children: [
+  //     { name: 'Terms and Condition', href: '#' },
+  //     { name: 'Privacy Policy', href: '#' },
+  //   ],
+  // },
   {
     headline: 'Contact',
     children: [
-      { name: 'support@minimals.cc', href: '#' },
-      { name: 'Los Angeles, 359  Hidden Valley Road', href: '#' },
+      { name: 'order@raisinelixir.com', href: '#' },
+      { name: '+84 937 9090 65', href: '#' },
     ],
   },
 ];
@@ -59,7 +59,7 @@ export default function Footer() {
         <Typography variant="caption" component="div">
           © All rights reserved
           <br /> made by &nbsp;
-          <Link href="https://minimals.cc/"> minimals.cc </Link>
+          <Link href="/"> Raisin Elixir </Link>
         </Typography>
       </Container>
     </Box>
@@ -93,13 +93,12 @@ export default function Footer() {
             <Logo sx={{ mx: { xs: 'auto', md: 'inherit' } }} />
           </Grid>
 
-          <Grid item xs={8} md={3}>
-            <Typography variant="body2" sx={{ pr: { md: 5 } }}>
-              The starting point for your next project with Minimal UI Kit, built on the newest
-              version of Material-UI ©, ready to be customized to your style.
+          <Grid item xs={4} md={4}>
+            <Typography variant="body2" sx={{ pr: { md: 6 } }}>
+              Experience the artistry of taste with our handcrafted elixirs. Each sip tells a story of tradition and quality.<br/>Thank you for choosing us to be a part of your moments
             </Typography>
 
-            <Stack
+            {/* <Stack
               spacing={1}
               direction="row"
               justifyContent={{ xs: 'center', md: 'flex-start' }}
@@ -113,7 +112,7 @@ export default function Footer() {
                   <Iconify icon={social.icon} />
                 </IconButton>
               ))}
-            </Stack>
+            </Stack> */}
           </Grid>
 
           <Grid item xs={12} md={7}>
@@ -158,11 +157,11 @@ export default function Footer() {
             textAlign: { xs: 'center', md: 'left' },
           }}
         >
-          © 2021. All rights reserved
+          © 2023. All rights reserved
         </Typography>
       </Container>
     </Box>
   );
 
-  return isHome ? simpleFooter : mainFooter;
+  return mainFooter;
 }

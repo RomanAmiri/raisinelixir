@@ -43,7 +43,7 @@ export default function MUIButtonsPage() {
   return (
     <>
       <Helmet>
-        <title> MUI Components: Buttons | Minimal UI</title>
+        <title> MUI Components: Buttons | Raisin Elixir</title>
       </Helmet>
 
       <Box

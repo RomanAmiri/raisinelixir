@@ -172,7 +172,7 @@ function Description() {
         </Typography>
       </m.div>
 
-      <m.div variants={varFade().in}>
+      {/* <m.div variants={varFade().in}>
         <Stack spacing={1.5} direction={{ xs: 'column-reverse', sm: 'row' }} sx={{ my: 5 }}>
           <Stack alignItems="center" spacing={2}>
             <Button
@@ -181,7 +181,7 @@ function Description() {
               color="inherit"
               size="large"
               variant="contained"
-              startIcon={<Iconify icon="eva:flash-fill" width={24} />}
+             // startIcon={<Iconify icon="eva:flash-fill" width={24} />}
               sx={{
                 bgcolor: 'text.primary',
                 color: (theme) => (theme.palette.mode === 'light' ? 'common.white' : 'grey.800'),
@@ -193,7 +193,7 @@ function Description() {
               Contact Us
             </Button>
 
-            {/* <Link
+             <Link
               color="inherit"
               variant="caption"
               target="_blank"
@@ -203,10 +203,10 @@ function Description() {
             >
               <Iconify icon="eva:external-link-fill" width={16} sx={{ mr: 0.5 }} />
               Get Free Version
-            </Link> */}
+            </Link> 
           </Stack>
 
-          {/* <Button
+          <Button
             color="inherit"
             size="large"
             variant="outlined"
@@ -217,9 +217,9 @@ function Description() {
             sx={{ borderColor: 'text.primary' }}
           >
             Design Preview
-          </Button> */}
+          </Button> 
         </Stack>
-      </m.div>
+      </m.div> */}
 
       {/* <Stack spacing={3} sx={{ textAlign: 'center', opacity: 0.4 }}>
         <m.div variants={varFade().in}>
@@ -268,14 +268,14 @@ function Content() {
           component={m.img}
           animate={{ y: ['0%', '100%'] }}
           transition={transition}
-          src={`/assets/images/home/${isLight ? 'hero-01' : 'hero-01'}.webp`}
+          src={`/assets/images/home/raisin/${isLight ? 'new_hero_01' : 'new_hero_01'}.webp`}
           sx={{ position: 'absolute' }}
         />
         <Box
           component={m.img}
           animate={{ y: ['-100%', '0%'] }}
           transition={transition}
-          src={`/assets/images/home/${isLight ? 'hero-01' : 'hero-01'}.webp`}
+          src={`/assets/images/home/raisin/${isLight ? 'new_hero_01' : 'new_hero_01'}.webp`}
           sx={{ position: 'absolute' }}
         />
       </Stack>
@@ -285,14 +285,14 @@ function Content() {
           component={m.img}
           animate={{ y: ['100%', '0%'] }}
           transition={transition}
-          src={`/assets/images/home/${isLight ? 'hero-02' : 'hero-02'}.webp`}
+          src={`/assets/images/home/raisin/${isLight ? 'new_hero_02' : 'new_hero_02'}.webp`}
           sx={{ position: 'absolute' }}
         />
         <Box
           component={m.img}
           animate={{ y: ['0%', '-100%'] }}
           transition={transition}
-          src={`/assets/images/home/${isLight ? 'hero-02' : 'hero-02'}.webp`}
+          src={`/assets/images/home/raisin/${isLight ? 'new_hero_02' : 'new_hero_02'}.webp`}
           sx={{ position: 'absolute' }}
         />
       </Stack>

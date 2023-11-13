@@ -16,7 +16,7 @@ const StyledRoot = styled('div')(({ theme }) => ({
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center center',
-  backgroundImage: `url('/assets/background/overlay_4.jpg')`,
+  // backgroundImage: `url('/assets/background/overlay_4.jpg')`,
   [theme.breakpoints.up('md')]: {
     padding: theme.spacing(20, 0),
   },
@@ -29,7 +29,7 @@ export default function HomeDarkMode() {
 
   return (
     <StyledRoot>
-      <Container component={MotionViewport}>
+      <Container>
         <m.div variants={varFade().inUp}>
           <Typography component="div" variant="overline" sx={{ color: 'primary.main' }}>
             Discover and Taste the Difference
@@ -69,12 +69,12 @@ export default function HomeDarkMode() {
         <m.div variants={varFade().inUp}>
           <Image
             alt="Raisin Elixir"
-            src="/assets/images/home/for_designer.png"
+            src="/assets/images/home/raisin/home_for_dark.png"
             sx={{
               borderRadius: 2,
               my: { xs: 5, md: 5 },
               boxShadow: (theme) => `-10px 10px 10px ${alpha(theme.palette.common.black, 0.24)}`,
-              height: 500
+              height: 600
             }}
           />
         </m.div>

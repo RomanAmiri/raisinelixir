@@ -19,7 +19,7 @@ export default function DemoEditorPage() {
   return (
     <>
       <Helmet>
-        <title> Extra Components: Editor | Minimal UI</title>
+        <title> Extra Components: Editor | Raisin Elixir</title>
       </Helmet>
 
       <Box

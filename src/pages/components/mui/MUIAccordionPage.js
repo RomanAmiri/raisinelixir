@@ -35,7 +35,7 @@ export default function MUIAccordionPage() {
   return (
     <>
       <Helmet>
-        <title> MUI Components: Accordion | Minimal UI</title>
+        <title> MUI Components: Accordion | Raisin Elixir</title>
       </Helmet>
 
       <Box

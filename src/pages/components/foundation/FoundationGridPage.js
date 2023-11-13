@@ -42,7 +42,7 @@ export default function FoundationGridPage() {
   return (
     <>
       <Helmet>
-        <title> Foundations: Grid | Minimal UI</title>
+        <title> Foundations: Grid | Raisin Elixir</title>
       </Helmet>
 
       <Box

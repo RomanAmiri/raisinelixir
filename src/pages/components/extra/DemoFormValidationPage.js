@@ -14,7 +14,7 @@ export default function DemoFormValidationPage() {
   return (
     <>
       <Helmet>
-        <title> Extra Components: Form Validation | Minimal UI</title>
+        <title> Extra Components: Form Validation | Raisin Elixir</title>
       </Helmet>
 
       <Box

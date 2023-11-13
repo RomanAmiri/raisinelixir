@@ -221,7 +221,7 @@ export default function InvoiceListPage() {
   return (
     <>
       <Helmet>
-        <title> Invoice: List | Minimal UI</title>
+        <title> Invoice: List | Raisin Elixir</title>
       </Helmet>
 
       <Container maxWidth={themeStretch ? false : 'lg'}>

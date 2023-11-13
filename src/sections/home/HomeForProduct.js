@@ -28,44 +28,40 @@ const StyledCard = styled(Card)(({ theme }) => ({
 
 const CARDS = [
     {
-        image: ' /assets/images/home/for_designer.png',
+        image: ' /assets/images/home/raisin/pure_green_350.png',
         title: 'Pure Raisin Elixir',
         subTitle: 'Green (350ML)',
-        description:
-            " We believe that the best products are born from nature. That's why our Raisin Elixir contains only 100% natural ingredients. We carefully select the finest raisins, ensuring the absence of artificial additives. It's pure, wholesome, and a testament to our commitment to your well-being",
+        description: "Embark on a journey of pure delight with our 350ml Green Holographic Pure Raisin Elixir. The refreshing essence of raisins meets a vibrant holographic experience, creating a lighter elixir for those seeking a mild, enchanting taste",
     },
     {
-        image: ' /assets/images/home/for_designer.png',
+        image: ' /assets/images/home/raisin/pure_blue_350.png',
         title: 'Pure Raisin Elixir',
         subTitle: 'Blue (350ML)',
-        description:
-            " We believe that the best products are born from nature. That's why our Raisin Elixir contains only 100% natural ingredients. We carefully select the finest raisins, ensuring the absence of artificial additives. It's pure, wholesome, and a testament to our commitment to your well-being",
+        description: "Unleash the rich flavor of pure raisins in our 350ml Blue Holographic Pure Raisin Elixir. The captivating blue holographic label enhances the magic within, providing a balanced and delightful experience for your senses",
     },
     {
-        image: ' /assets/images/home/for_designer.png',
+        image: ' /assets/images/home/raisin/pure_blue_100.png',
         title: 'Pure Raisin Elixir',
         subTitle: 'Blue (100ML)',
-        description:
-            " We believe that the best products are born from nature. That's why our Raisin Elixir contains only 100% natural ingredients. We carefully select the finest raisins, ensuring the absence of artificial additives. It's pure, wholesome, and a testament to our commitment to your well-being",
+        description: "Enjoy the allure of our Blue Holographic Pure Raisin Elixir in a convenient 100ml size. This pocket-sized variant retains the enchanting essence of our larger bottles, ensuring a delightful and refreshing experience on the go",
     },
     {
-        image: ' /assets/images/home/for_designer.png',
+        image: ' /assets/images/home/raisin/pure_red_350.png',
         title: 'Pure Raisin Elixir',
         subTitle: 'Red (350ML)',
-        description:
-            " We believe that the best products are born from nature. That's why our Raisin Elixir contains only 100% natural ingRedients. We carefully select the finest raisins, ensuring the absence of artificial additives. It's pure, wholesome, and a testament to our commitment to your well-being",
+        description: "Elevate your senses with our 350ml Red Holographic Pure Raisin Elixir. The intense flavor of pure raisins is beautifully presented with a striking red holographic label, offering a bolder and satisfying elixir experience",
     },
     {
-        image: ' /assets/images/home/for_designer.png',
+        image: ' /assets/images/home/raisin/pure_blue_350.png',
         title: 'Cinnamon Raisin Elixir',
         subTitle: 'Blue (350ML)',
-        description: 'Quality is our hallmark. Our Raisin Elixir is a product of meticulous care and precision. With each batch, we deliver a rich and velvety elixir that stands out for its exceptional quality. From the selection of ingredients to the crafting process, we ensure that your experience is unparalleled',
+        description: "Immerse yourself in the 350ml Blue Holographic Cinnamon Raisin Elixir, a perfect harmony of cinnamon and raisin flavors, Providing a delightful elixir journey for those who appreciate a larger portion of this unique blend",
     },
     {
-        image: ' /assets/images/home/for_designer.png',
+        image: ' /assets/images/home/raisin/pure_red_100.png',
         title: 'Cinnamon Raisin Elixir',
         subTitle: 'Blue (100ML)',
-        description: 'Quality is our hallmark. Our Raisin Elixir is a product of meticulous care and precision. With each batch, we deliver a rich and velvety elixir that stands out for its exceptional quality. From the selection of ingredients to the crafting process, we ensure that your experience is unparalleled',
+        description: "Delight in the fusion of cinnamon and raisin with our 100ml Blue Holographic Cinnamon Raisin Elixir. The enchanting blue holographic label adds a touch of magic to this unique blend, providing a perfect balance for cinnamon enthusiasts",
     },
 ];
 

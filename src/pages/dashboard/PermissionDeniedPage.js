@@ -26,7 +26,7 @@ export default function PermissionDeniedPage() {
   return (
     <>
       <Helmet>
-        <title> Other Cases: Permission Denied | Minimal UI</title>
+        <title> Other Cases: Permission Denied | Raisin Elixir</title>
       </Helmet>
 
       <Container maxWidth={themeStretch ? false : 'lg'}>

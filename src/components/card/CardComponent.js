@@ -22,7 +22,7 @@ export default function CardComponent({
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
-        sx={{ height: 200 }}
+        sx={{ height: 250 }}
         image={image}
         title={title}
       />

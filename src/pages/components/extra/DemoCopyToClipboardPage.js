@@ -48,7 +48,7 @@ export default function DemoCopyToClipboardPage() {
   return (
     <>
       <Helmet>
-        <title> Extra Components: Copy To Clipboard | Minimal UI</title>
+        <title> Extra Components: Copy To Clipboard | Raisin Elixir</title>
       </Helmet>
 
       <Box
